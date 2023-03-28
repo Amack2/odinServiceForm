@@ -1,6 +1,5 @@
-
-
 * {
+    font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
     --qlivingTeal: #109992;
 }
 
@@ -10,7 +9,7 @@
     border: 1px solid black;
     /* height is just placeholder */
     height: 850px;
-    
+
 }
 
 .leftImageContainer {
@@ -19,8 +18,15 @@
     border: 1px solid pink;
 }
 
+.leftImageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 70% 0;
+}
+
 .rightTextContainer {
-    
+
     width: 66%;
     flex-direction: column;
     border: 1px solid lightgreen;
@@ -31,14 +37,19 @@
     border: 1px solid purple;
 }
 
+
 .headerContainer {
     padding: 20px;
-       
+
 }
 
 .formContainer {
     height: 33%;
     border: 1px solid orange;
+}
+
+.formRow > label {
+display: block;
 }
 
 .footer {
@@ -48,3 +59,4 @@
 }
 
 /* qliving colour = #109992 */
+/* if invalid write are u pawsitive? it will be hilarious, trust me */
