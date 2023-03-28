@@ -1,0 +1,50 @@
+
+
+* {
+    --qlivingTeal: #109992;
+}
+
+.pageContainer {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    /* height is just placeholder */
+    height: 850px;
+    
+}
+
+.leftImageContainer {
+    width: 34%;
+    flex-direction: column;
+    border: 1px solid pink;
+}
+
+.rightTextContainer {
+    
+    width: 66%;
+    flex-direction: column;
+    border: 1px solid lightgreen;
+}
+
+.topCopy {
+    height: 33%;
+    border: 1px solid purple;
+}
+
+.headerContainer {
+    padding: 20px;
+       
+}
+
+.formContainer {
+    height: 33%;
+    border: 1px solid orange;
+}
+
+.footer {
+    height: 33%;
+    border: 1px solid salmon;
+    background-color: var(--qlivingTeal);
+}
+
+/* qliving colour = #109992 */
