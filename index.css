@@ -119,14 +119,21 @@ form {
 .formRow>input:focus {
     border: 3px solid black;
     box-shadow: 5px 5px 2px var(--qlivingDarkTeal);
+}
 
-
+.formRow>input:required {
+    border: 2px solid black;
+    box-shadow: 5px 5px 2px transparent;
 }
 
 .formRow>input:invalid {
-    border: 2px solid lightcoral;
+    border: 2px solid black;
     box-shadow: 5px 5px 2px lightcoral;
+}
 
+.formRow>input:valid {
+    border: 2px solid black;
+    box-shadow: 5px 5px 2px var(--qlivingLightTeal);
 }
 
 
