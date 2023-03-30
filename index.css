@@ -22,7 +22,7 @@
     background-position: 70% 0;
     display: flex;
     align-content: center;
-       
+
 }
 
 
@@ -37,7 +37,7 @@
     background-size: 85%;
     display: flex;
     margin: 25px;
-    
+
 }
 
 .rightTextContainer {
@@ -87,7 +87,8 @@
 }
 
 form {
-    appearance: none;}
+    appearance: none;
+}
 
 .formRowContainer {
     margin-left: 25px;
@@ -122,10 +123,23 @@ form {
 
 }
 
+.formRow>input:invalid {
+    border: 2px solid lightcoral;
+    box-shadow: 5px 5px 2px lightcoral;
+
+}
+
+
+
+
+.invalidRow {
+    border: 2px solid lightcoral;
+    box-shadow: 5px 5px 2px lightcoral;
+}
+
+
 .footer {
     height: 30%;
-
-
 }
 
 .submitBtn {
@@ -139,11 +153,10 @@ form {
     color: var(--qlivingDarkTeal);
     background-color: white;
     border-width: 0px;
+    
 }
 
 .submitBtn:hover {
     filter: brightness(95%);
 }
 
-/* qliving colour = #109992 */
-/* if invalid write are u pawsitive? it will be hilarious, trust me */
