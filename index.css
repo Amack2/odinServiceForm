@@ -6,16 +6,15 @@
 
 body {
     background-color: white
-    
 }
 
 .pageContainer {
     display: flex;
     flex-direction: row;
-    
+
 
     /* height is just placeholder */
-height: 850px;
+    height: 850px;
 
 }
 
@@ -105,12 +104,13 @@ form {
     max-width: 50%;
 }
 
+.formPasswordRow>label,
 .formRow>label {
     display: block;
     font-size: medium;
 }
 
-
+.formPasswordRow>input,
 .formRow>input {
     appearance: none;
     border-radius: 5px;
@@ -118,13 +118,9 @@ form {
     border: 2px solid black;
 }
 
+.formPasswordRow>input:hover,
 .formRow>input:hover {
     filter: brightness(95%);
-}
-
-.formRow>input:focus {
-    border: 3px solid black;
-    box-shadow: 5px 5px 2px var(--qlivingDarkTeal);
 }
 
 .formRow>input:required {
@@ -132,24 +128,24 @@ form {
     box-shadow: 5px 5px 2px transparent;
 }
 
+
+.invalidRow,
 .formRow>input:invalid {
     border: 2px solid black;
     box-shadow: 5px 5px 2px lightcoral;
 }
 
+.validRow,
 .formRow>input:valid {
     border: 2px solid black;
     box-shadow: 5px 5px 2px var(--qlivingLightTeal);
 }
 
-
-
-
-.invalidRow {
-    border: 2px solid lightcoral;
-    box-shadow: 5px 5px 2px lightcoral;
+.formPasswordRow>input:focus,
+.formRow>input:focus {
+    border: 3px solid black;
+    box-shadow: 5px 5px 2px var(--qlivingDarkTeal);
 }
-
 
 .footer {
     height: 30%;
@@ -166,10 +162,19 @@ form {
     color: var(--qlivingDarkTeal);
     background-color: white;
     border-width: 0px;
-    
+
 }
+
+.submitBtn:disabled {
+    filter: brightness(80%);
+    /* content */
+}
+
+.submitBtn:disabled:hover {
+    filter: brightness(80%);
+}
+
 
 .submitBtn:hover {
     filter: brightness(95%);
 }
-
